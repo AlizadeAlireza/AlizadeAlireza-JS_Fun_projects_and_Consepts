@@ -16,8 +16,10 @@ function randomNumber() {
     return Math.random
 }
 
-let randomNumber = () => Math.random
+let randomNumber2 = () => Math.random
 
 document.addEventListener("click", function () {
     console.log("click")
 })
+
+document.addEventListener("click", () => console.log("click"))

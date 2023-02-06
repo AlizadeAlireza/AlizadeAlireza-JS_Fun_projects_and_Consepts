@@ -9,9 +9,7 @@ function isPositive(number) {
     return number >= 0
 }
 
-function isPositive(number) {
-    return number >= 0
-}
+let isPositive2 = (number) => number >= 0
 
 function randomNumber() {
     return Math.random

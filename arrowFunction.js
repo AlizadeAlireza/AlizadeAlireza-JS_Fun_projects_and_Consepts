@@ -23,3 +23,6 @@ document.addEventListener("click", function () {
 })
 
 document.addEventListener("click", () => console.log("click"))
+
+// this is just for the test
+

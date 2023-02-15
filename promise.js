@@ -1,5 +1,5 @@
 let p = new Promise((resolve, reject) => {
-    let a = 1 + 1
+    let a = 1 + 2
     if (a == 2) {
         resolve("Success")
     } else {
@@ -11,4 +11,6 @@ let p = new Promise((resolve, reject) => {
 // resolve("Success") ---> our parameter for this function is message
 p.then((message) => {
     console.log("this is in the then " + message)
+}).catch((message) => {
+    console.log("this is in the catch " + message)
 })

@@ -16,3 +16,21 @@ p.then((message) => {
 })
 
 // another example of Promise
+const userLeft = false
+const userWatchingCatMeme = false
+
+function watchTutorialCallback(callback, errorCallback) {
+    if (userLeft) {
+        errorCallback({
+            name: "User Left",
+            message: ":(",
+        })
+    } else if (userWatchingCatMeme) {
+        errorCallback({
+            name: "User Watching Cat Meme",
+            message: "alireza < Cat",
+        })
+    } else {
+        callback("Thumbs up and Subscribe")
+    }
+}

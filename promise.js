@@ -14,3 +14,5 @@ p.then((message) => {
 }).catch((message) => {
     console.log("this is in the catch " + message)
 })
+
+// another example of Promise

@@ -20,7 +20,8 @@ console.log(`this items filtered by the value of under 100 ${filteredItems}`)
 console.log(filteredItems)
 
 /* 
-map --> allows us to take one array and convert it into new array 
+map method--> allows us to take one array and convert it into new array 
+get just only one parameter
 */
 
 const itemNames = items.map((item) => {
@@ -29,3 +30,13 @@ const itemNames = items.map((item) => {
 })
 
 console.log(itemNames)
+
+/* 
+find method ---> allows us to find a single object in an array
+*/
+
+const foundItem = items.find((item) => {
+    return item.name === "TV"
+})
+
+console.log(foundItem)

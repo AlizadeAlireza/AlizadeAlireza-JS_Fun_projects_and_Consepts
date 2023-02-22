@@ -17,3 +17,16 @@ function printName(user) {
 function printAge(user) {
     console.log(user.age)
 }
+
+// ways of export
+
+// export { printName, printAge }
+// export default User
+// we can declare export default before declaration of class
+
+// export default class User {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+// }

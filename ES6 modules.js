@@ -1,0 +1,4 @@
+/*
+the main thing about modules is to import and export different sections of code
+from different files into other files.
+*/

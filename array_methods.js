@@ -72,3 +72,13 @@ const total = items.reduce((currentTotal, item) => {
 }, 0) // the 0 is the starting point of our item array
 
 console.log(total)
+
+/*
+includes method ---> it's just going to take a single argument and
+we want to see, we have this object in our array or not
+*/
+
+const ourItems = [1, 2, 3, 4, 5]
+
+const includesTwo = ourItems.includes(5)
+console.log(`the including method show this: ${includesTwo}`)

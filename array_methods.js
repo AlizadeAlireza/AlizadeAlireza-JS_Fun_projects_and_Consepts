@@ -44,3 +44,8 @@ console.log(foundItem)
 /* 
 for each method ---> this method does not actually return any thing 
 */
+
+items.forEach((item) => {
+    console.log(item.name)
+    console.log(item.price)
+})

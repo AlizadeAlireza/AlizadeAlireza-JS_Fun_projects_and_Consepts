@@ -61,6 +61,18 @@ const hasInexpensiveItems = items.some((item) => {
 
 console.log(hasInexpensiveItems)
 
+/*
+every method ---> like some method except for instead of checking for 
+one item for that operate, it'll check all the items that must be compatible
+with that condition
+*/
+
+const hasInexpensiveItems2 = items.every((item) => {
+    return item.price <= 100
+})
+
+console.log(`this is for every method:  ${hasInexpensiveItems2}`)
+
 /* 
 reduce method ---> do some operation on the array and returning a combination 
 of all those different operations

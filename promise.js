@@ -63,3 +63,11 @@ function watchTutorialPromise() {
         }
     })
 }
+
+watchTutorialPromise().then(
+    ((message) => {
+        console.log("Success: " + message)
+    }).catch((error) => {
+        console.log(error.name + " " + error.message)
+    })
+)

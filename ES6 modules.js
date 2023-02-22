@@ -30,3 +30,7 @@ function printAge(user) {
 //         this.age = age
 //     }
 // }
+
+// export function printAge(user) {
+//     console.log(user.age)
+// }

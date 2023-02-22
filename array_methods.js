@@ -40,3 +40,7 @@ const foundItem = items.find((item) => {
 })
 
 console.log(foundItem)
+
+/* 
+for each method ---> this method does not actually return any thing 
+*/

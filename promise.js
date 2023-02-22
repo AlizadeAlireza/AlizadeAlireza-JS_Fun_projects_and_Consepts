@@ -34,3 +34,12 @@ function watchTutorialCallback(callback, errorCallback) {
         callback("Thumbs up and Subscribe")
     }
 }
+
+watchTutorialCallback(
+    (message) => {
+        console.log("Success: " + message)
+    },
+    (error) => {
+        console.log(error.name + " " + error.message)
+    }
+)

@@ -18,3 +18,14 @@ const filteredItems = items.filter((item) => {
 
 console.log(`this items filtered by the value of under 100 ${filteredItems}`)
 console.log(filteredItems)
+
+/* 
+map --> allows us to take one array and convert it into new array 
+*/
+
+const itemNames = items.map((item) => {
+    return item.name
+    // return item.price
+})
+
+console.log(itemNames)

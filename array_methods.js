@@ -60,3 +60,15 @@ const hasInexpensiveItems = items.some((item) => {
 })
 
 console.log(hasInexpensiveItems)
+
+/* 
+reduce method ---> do some operation on the array and returning a combination 
+of all those different operations
+*/
+
+// we wanted to get the total price of all the different items in this array
+const total = items.reduce((currentTotal, item) => {
+    return item.price + currentTotal
+}, 0) // the 0 is the starting point of our item array
+
+console.log(total)

@@ -49,3 +49,14 @@ items.forEach((item) => {
     console.log(item.name)
     console.log(item.price)
 })
+
+/* 
+some method ---> this method just return true or false 
+if the item is available or not
+*/
+
+const hasInexpensiveItems = items.some((item) => {
+    return item.price <= 100
+})
+
+console.log(hasInexpensiveItems)

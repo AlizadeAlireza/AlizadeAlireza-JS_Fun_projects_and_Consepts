@@ -110,7 +110,7 @@ so it'll return just one message
 */
 console.log("promise.race \n\n\n\n")
 Promise.race([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
-    (messages) => {
-        console.log(messages)
+    (message) => {
+        console.log(message)
     }
 )

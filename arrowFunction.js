@@ -25,8 +25,3 @@ document.addEventListener("click", function () {
 document.addEventListener("click", () => console.log("click"))
 
 // this is just for the test
-
-<<<<<<< HEAD
-=======
-console.log("this is for test")
->>>>>>> 9941efa (test)

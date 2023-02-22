@@ -7,3 +7,14 @@ const items = [
     { name: "Computer", price: 1000 },
     { name: "Keyboard", price: 25 },
 ]
+
+/*
+filter method ---> just takes a single function witch is going to have one parameter
+*/
+
+const filteredItems = items.filter((item) => {
+    return item.price <= 100
+})
+
+console.log(`this items filtered by the value of under 100 ${filteredItems}`)
+console.log(filteredItems)

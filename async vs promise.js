@@ -14,3 +14,12 @@ function processRequest(response) {
         resolve(`Extra Information + ${response}`)
     })
 }
+
+makeRequest("Google")
+    .then((response) => {
+        console.log("Response Received")
+        return processRequest(response)
+    })
+    .then((processedResponse) => {
+        console.log(processedResponse)
+    })

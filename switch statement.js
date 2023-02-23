@@ -20,8 +20,11 @@ we can use <break>
 switch (favoriteAnimal) {
     case "cat":
         console.log("cats are great")
+        break
     case "dog":
         console.log("dogs are so smart!")
+        break
     case "shark":
         console.log("sharks are dangerous")
+        break
 }

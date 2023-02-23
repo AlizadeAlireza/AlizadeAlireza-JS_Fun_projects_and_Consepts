@@ -27,9 +27,13 @@ function processRequest(response) {
 
 // async function
 async function doWork() {
-    const response = await makeRequest("Google")
-    console.log("Response Received")
-    const processedResponse = await processRequest(response)
-    console.log(processedResponse)
+    try {
+        const response = await makeRequest("Google")
+        console.log("Response Received")
+        const processedResponse = await processRequest(response)
+        console.log(processedResponse)
+    } catch (err) {
+        console.log(err)
+    }
 }
 doWork()

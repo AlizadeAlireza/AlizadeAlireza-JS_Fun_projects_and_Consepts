@@ -18,11 +18,10 @@ we can use <break>
 */
 
 switch (favoriteAnimal) {
+    case "bobcat":
     case "cat":
         console.log("cats are great")
         break
-    case "bobcat":
-        console.log("cats are great")
     case "dog":
         console.log("dogs are so smart!")
         break

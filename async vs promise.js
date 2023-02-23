@@ -15,11 +15,21 @@ function processRequest(response) {
     })
 }
 
-makeRequest("Google")
-    .then((response) => {
-        console.log("Response Received")
-        return processRequest(response)
-    })
-    .then((processedResponse) => {
-        console.log(processedResponse)
-    })
+// promise func
+// makeRequest("Google")
+//     .then((response) => {
+//         console.log("Response Received")
+//         return processRequest(response)
+//     })
+//     .then((processedResponse) => {
+//         console.log(processedResponse)
+//     })
+
+// async function
+async function doWork() {
+    const response = await makeRequest("Google")
+    console.log("Response Received")
+    const processedResponse = await processRequest(response)
+    console.log(processedResponse)
+}
+doWork()

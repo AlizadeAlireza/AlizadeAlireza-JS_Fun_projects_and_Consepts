@@ -30,3 +30,15 @@ console.log(`c = ${c}`)
 console.log(`d = ${d}`)
 console.log(`e = ${e}`)
 console.log(`h = ${h}`)
+
+function add(array, element) {
+    array.push(element)
+    // array = [element]
+}
+add(d, 3)
+/* 
+if we set array = [element] --> doesn't show any added value in our array
+because with that work we create a new array with 0x02 memory address
+
+if we change it to const variable we still able to do push in our array
+*/

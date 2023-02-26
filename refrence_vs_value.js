@@ -15,14 +15,14 @@ h.push(7)
 // they are true because their have same address
 let m = [1, 2]
 let q = m
-console.log(`m === q ${m === q}`)
-console.log(`m == q ${m == q}`)
+console.log(`m === q ${m === q}`) // 0x01
+console.log(`m == q ${m == q}`) // 0x01
 
 // they are false because their haven't same address
 let n = [1, 2]
 let g = [1, 2]
-console.log(`n === g ${n === g}`)
-console.log(`n == g ${n == g}`)
+console.log(`n === g ${n === g}`) // 0x01
+console.log(`n == g ${n == g}`) // 0x02
 
 console.log(`a = ${a}`)
 console.log(`b = ${b}`)

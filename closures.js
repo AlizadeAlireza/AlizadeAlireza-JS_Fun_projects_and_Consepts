@@ -32,3 +32,9 @@ newFunction("inside")
 /**
  * every thing in outer function is available in inner function
  */
+
+function out(url) {
+    fetch(url).then(() => {
+        console.log(url)
+    })
+}

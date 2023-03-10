@@ -18,3 +18,17 @@ printName()
  *
  * whatever the most recent value of that variable is.
  */
+
+function outerFunction(outerVariable) {
+    const outer2 = "Hi"
+    return function innerFunction(innerVariable) {
+        console.log("Outer Variable: " + outerVariable)
+        console.log("Inner Variable: " + innerVariable)
+    }
+}
+const newFunction = outerFunction("outside")
+newFunction("inside")
+
+/**
+ * every thing in outer function is available in inner function
+ */

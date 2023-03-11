@@ -30,3 +30,9 @@ function changeColor(element) {
 
 // we can use DOM over documents
 const child1 = grandparent.querySelector(".child")
+
+// down to top
+
+const childd = document.querySelector("#child-id")
+const parentt = childd.parentElement
+const grandparentt = parentt.parentElement

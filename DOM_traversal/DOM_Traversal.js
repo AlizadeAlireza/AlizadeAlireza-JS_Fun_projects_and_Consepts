@@ -33,6 +33,8 @@ const child1 = grandparent.querySelector(".child")
 
 // down to top
 
-const childd = document.querySelector("#child-id")
-const parentt = childd.parentElement
+const childOne = document.querySelector("#child-id")
+const parentt = childOne.parentElement
 const grandparentt = parentt.parentElement
+
+const grandparenttt = childOne.closest(".grandparent") // give us the closest parent that matches

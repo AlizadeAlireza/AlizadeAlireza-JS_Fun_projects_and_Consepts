@@ -27,3 +27,6 @@ changeColor(children[0])
 function changeColor(element) {
     element.style.backgroundColor = "#333"
 }
+
+// we can use DOM over documents
+const child1 = grandparent.querySelector(".child")

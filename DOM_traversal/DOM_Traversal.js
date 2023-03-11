@@ -16,6 +16,14 @@ parents.forEach(changeColor)
 
 changeColor(grandparent)
 
+// select a query from another
+const parents2 = Array.from(grandparent.children)
+
+// want children inside first parents
+parentOne = parents[0]
+const children = parentOne.children
+changeColor(children[0])
+
 function changeColor(element) {
     element.style.backgroundColor = "#333"
 }

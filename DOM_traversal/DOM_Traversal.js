@@ -38,3 +38,4 @@ const parentt = childOne.parentElement
 const grandparentt = parentt.parentElement
 
 const grandparenttt = childOne.closest(".grandparent") // give us the closest parent that matches
+const childTwo = childOne.nextElementSibling // the next element that is matches

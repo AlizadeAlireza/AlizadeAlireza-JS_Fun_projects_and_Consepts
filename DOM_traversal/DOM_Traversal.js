@@ -8,7 +8,11 @@ const parents = document.getElementsByClassName("parent")
 parents.forEach(changeColor)
 
 // query selector can use one element
-const grandparent = document.querySelector("#grandparent-id")
+// const grandparent = document.querySelector("#grandparent-id")
+const grandparent = document.querySelector(".grandparent-id")
+
+const parents1 = document.querySelectorAll(".parent")
+parents.forEach(changeColor)
 
 changeColor(grandparent)
 

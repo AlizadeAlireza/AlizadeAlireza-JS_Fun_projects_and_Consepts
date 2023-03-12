@@ -5,7 +5,13 @@ let body = document.body
 const div = document.createElement("div")
 // div.innerText = "Hello World" ---> just the visible items
 // and show just like on the html page
-div.textContent = "Hello World" // ---> all items dispite hidden elements
+
+div.textContent = "Hello World2" // ---> all items dispite hidden elements
 // show like html file, copy it and paste it.
 
+/* for render html we can use innerHtml */
+// div.innerHtml = "<strong>Hello World 2"</strong>
+const strong = document.createElement("strong")
+strong.innerText = "Hello World 2"
+div.append(strong)
 body.append(div)

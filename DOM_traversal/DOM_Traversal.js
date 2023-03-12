@@ -37,5 +37,11 @@ const childOne = document.querySelector("#child-id")
 const parentt = childOne.parentElement
 const grandparentt = parentt.parentElement
 
-const grandparenttt = childOne.closest(".grandparent") // give us the closest parent that matches
-const childTwo = childOne.nextElementSibling // the next element that is matches
+// give us the closest parent that matches
+const grandparenttt = childOne.closest(".grandparent")
+
+// the next element that is matches
+const childTwo = childOne.nextElementSibling
+
+// the previous element that give us the previous sibling
+changeColor(childTwo.previousElementSibling)

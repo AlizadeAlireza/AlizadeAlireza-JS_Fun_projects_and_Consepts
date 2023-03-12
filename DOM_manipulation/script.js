@@ -15,3 +15,23 @@ const strong = document.createElement("strong")
 strong.innerText = "Hello World 2"
 div.append(strong)
 body.append(div)
+
+/** REMOVE */
+strong.remove()
+div.append(strong)
+
+spanHi = document.querySelector("#hi")
+spanBye = document.querySelector("#bye")
+
+console.log(spanHi.getAttribute("title"))
+//or
+console.log(spanHi.title)
+
+// set attribute
+spanHi.setAttribute("title", "alireza")
+console.log(spanHi.setAttribute("title", "alireza"))
+//or
+console.log((spanHi.id = "alireza"))
+
+// remove attribute
+spanHi.removeAttribute("title")

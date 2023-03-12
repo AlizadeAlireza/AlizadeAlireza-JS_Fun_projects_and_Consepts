@@ -40,3 +40,8 @@ spanHi.removeAttribute("title")
 console.log(spanHi.dataset.test)
 
 spanBye.dataset.newName = "this is for the Bye"
+
+spanBye.classList.toggle("hi3") // add or removing with bool
+
+spanBye.style.color = "red"
+spanBye.style.backgroundColor = "blue"

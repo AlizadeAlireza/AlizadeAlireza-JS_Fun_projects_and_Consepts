@@ -35,3 +35,8 @@ console.log((spanHi.id = "alireza"))
 
 // remove attribute
 spanHi.removeAttribute("title")
+
+// set data sets
+console.log(spanHi.dataset.test)
+
+spanBye.dataset.newName = "this is for the Bye"

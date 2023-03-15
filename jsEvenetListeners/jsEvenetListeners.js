@@ -14,6 +14,11 @@ grandparent.addEventListener("click", (e) => {
     console.log("Grandparent 1")
 })
 
-grandparent.addEventListener("click", (e) => {
-    console.log("Grandparent 2")
+parent.addEventListener("click", (e) => {
+    console.log("parent")
 })
+
+child.addEventListener("click", (e) => {
+    console.log("childe")
+})
+// when we click on child it's like we clicked on the all buttons

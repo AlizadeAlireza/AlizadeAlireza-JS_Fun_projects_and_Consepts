@@ -13,10 +13,13 @@ grandparent.addEventListener(
     (e) => {
         // console.log(e)
         // console.log(e.target)
-        console.log("Grandparent 1")
+        console.log("Grandparent capture")
     },
     { capture: true }
 )
+grandparent.addEventListener("click", (e) => {
+    console.log("Grandparent bubble")
+})
 
 parent.addEventListener("click", (e) => {
     console.log("parent")
@@ -32,3 +35,7 @@ child.addEventListener("click", (e) => {
  * capture starts on the outside and moves in
  * but the bubbling starts from inside
  */
+
+document.addEventListener("click", (e) => {
+    console.log("document bubble")
+})

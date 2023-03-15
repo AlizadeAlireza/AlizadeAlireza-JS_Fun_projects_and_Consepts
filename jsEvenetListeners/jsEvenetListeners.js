@@ -8,11 +8,15 @@ const child = document.querySelector(".child")
  * that the event is fired. --> in our case clicked.
  * target in console -> the thing that clicked on
  */
-grandparent.addEventListener("click", (e) => {
-    // console.log(e)
-    // console.log(e.target)
-    console.log("Grandparent 1")
-})
+grandparent.addEventListener(
+    "click",
+    (e) => {
+        // console.log(e)
+        // console.log(e.target)
+        console.log("Grandparent 1")
+    },
+    { capture: true }
+)
 
 parent.addEventListener("click", (e) => {
     console.log("parent")
@@ -22,3 +26,9 @@ child.addEventListener("click", (e) => {
     console.log("childe")
 })
 // when we click on child it's like we clicked on the all buttons
+// and work with the closest element.
+
+/**
+ * capture starts on the outside and moves in
+ * but the bubbling starts from inside
+ */
